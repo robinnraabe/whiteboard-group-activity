@@ -10,6 +10,7 @@ function reverseString(stringToReverse) {
     newString = reverseArray.join('');
     return newString
 }
+console.log("reverseString('Hello world'):", reverseString('Hello world'));
 
 //Problem 2
 function fizzbuzz(number) {
@@ -26,6 +27,10 @@ function fizzbuzz(number) {
         return number;
     }
 }
+console.log('fizzbuzz(300):', fizzbuzz(300));
+console.log('fizzbuzz(303):', fizzbuzz(303));
+console.log('fizzbuzz(305):', fizzbuzz(305));
+console.log('fizzbuzz(202):', fizzbuzz(202));
 
 // Problem 3
 function isLeapYear(year) {
@@ -42,6 +47,9 @@ function isLeapYear(year) {
         return false;
     }
 }
+console.log('isLeapYear(2000):', isLeapYear(2000));
+console.log('isLeapYear(2012):', isLeapYear(2012));
+console.log('isLeapYear(2100):', isLeapYear(2100));
 
 // Problem 4
 function isBLT(array) {
@@ -71,6 +79,9 @@ function isBLT(array) {
         return false;
     }
 }
+console.log('isBLT([bread, bacon, lettuce, tomatoes, peppers, bread]):', isBLT(['bread', 'bacon', 'lettuce', 'tomatoes', 'peppers', 'bread']));
+console.log('isBLT([bacon, lettuce, tomatoes, bread]):', isBLT(['bacon', 'lettuce', 'tomatoes', 'bread']));
+console.log('isBLT([bread, bacon, lettuce, peppers, bread]):', isBLT(['bread', 'bacon', 'lettuce', 'peppers', 'bread']));
 
 // Problem 5
 function moveToEnd(array, parity) {
@@ -92,6 +103,8 @@ function moveToEnd(array, parity) {
         return evenArray.concat(oddArray);
     }
 }
+console.log("moveToEnd([1,2,3,4,5,6], even):", moveToEnd([1,2,3,4,5,6], 'even'));
+console.log("moveToEnd([1,2,3,4,5,6], odd):", moveToEnd([1,2,3,4,5,6], 'odd'));
 
 // Problem 6
 function wordCounter(array, string) {
@@ -103,6 +116,7 @@ function wordCounter(array, string) {
     }
     return stringCount;
 }
+console.log("wordCounter(['one', 'One', 'two', 'ONE', 'one'], one):", wordCounter(['one', 'One', 'two', 'ONE', 'one'], 'one'));
 
 // Problem 7
 function addUpNumbers(number) {
@@ -113,3 +127,4 @@ function addUpNumbers(number) {
     }
     return numberSum;
 }
+console.log('addUpNumbers(10):', addUpNumbers(10));
